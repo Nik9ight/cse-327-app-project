@@ -1,0 +1,107 @@
+#[versions]
+#agp = "8.10.1"
+#credentialsPlayServicesAuth = "1.5.0"
+#firebaseBom = "33.15.0"
+#googleid = "1.1.1"
+#kotlin = "2.0.21"
+#coreKtx = "1.10.1"
+#junit = "4.13.2"
+#junitVersion = "1.1.5"
+#espressoCore = "3.5.1"
+#appcompat = "1.6.1"
+#material = "1.10.0"
+#
+#[libraries]
+#androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+#androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentialsPlayServicesAuth" }
+#androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+#firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+#firebase-auth = { module = "com.google.firebase:firebase-auth" }
+#firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+#googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+#junit = { group = "junit", name = "junit", version.ref = "junit" }
+#androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+#androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+#androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+#material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+#
+#[plugins]
+#android-application = { id = "com.android.application", version.ref = "agp" }
+#kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#
+
+
+# File: MyLLMApp/gradle/libs.versions.toml
+#
+# This file centralizes versions for plugins and libraries.
+# Add or update these entries as needed.
+
+[versions]
+# Gradle Plugin and Kotlin versions (from your current setup)
+agp = "8.10.1"
+kotlin = "2.0.21"
+
+# AndroidX Core & UI versions
+# Recommended updates for compatibility with compileSdk 35
+coreKtx = "1.13.1"           # <-- UPDATED: Recommended for compileSdk 35
+appcompat = "1.7.0"          # <-- UPDATED: Recommended for compileSdk 35
+material = "1.12.0"          # <-- UPDATED: Recommended for compileSdk 35
+constraintlayout = "2.1.4"   # <-- ADDED: For ConstraintLayout usage
+
+# Firebase versions (from your current setup)
+firebaseBom = "33.15.0"
+# Note: credentialsPlayServicesAuth and googleid are for the new Credential Manager API.
+# We're keeping playServicesAuth for the traditional GoogleSignInClient flow used in LoginActivity.kt.
+credentialsPlayServicesAuth = "1.5.0"
+googleid = "1.1.1"
+
+# Google Play Services Auth for traditional Firebase Google Sign-In
+playServicesAuth = "21.2.0"  # <-- ADDED: This is for GoogleSignInClient
+
+# Testing versions (from your current setup, renamed junitVersion for clarity)
+junit = "4.13.2"
+androidxJunit = "1.1.5"      # <-- RENAMED: from junitVersion for better clarity
+espressoCore = "3.5.1"
+
+# Optional Libraries (uncomment and set versions if you use them)
+# imagePicker = "2.1"        # Example ImagePicker library version
+# tensorflowLite = "2.16.0"
+# tensorflowLiteGpu = "2.16.0"
+# tensorflowLiteMetadata = "0.1.0"
+# firebaseMessaging = "24.0.0" # Example Firebase Messaging version if you use FCM
+
+[libraries]
+# AndroidX & UI libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" } # <-- ADDED
+
+# Firebase libraries
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" } # Version managed by BOM
+firebase-auth = { module = "com.google.firebase:firebase-auth" } # Version managed by BOM
+
+# Google Sign-In
+play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" } # <-- ADDED
+
+# Your existing Credentials API libraries (keep commented out if not actively using with LoginActivity.kt)
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentialsPlayServicesAuth" }
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+
+# Testing libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" } # <-- RENAMED
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Optional Libraries (uncomment if you use them)
+# image-picker = { group = "com.github.dhaval2404", name = "ImagePicker", version.ref = "imagePicker" }
+# tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
+# tensorflow-lite-gpu = { group = "org.tensorflow", name = "tensorflow-lite-gpu", version.ref = "tensorflowLiteGpu" }
+# tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tensorflowLiteMetadata" }
+# firebase-messaging = { module = "com.google.firebase:firebase-messaging" } # Version managed by BOM
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

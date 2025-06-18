@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with Google" />
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter input for LLM" />
+
+    <Button
+        android:id="@+id/invoke_m1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoke M1 (Instruction Model)" />
+
+    <Button
+        android:id="@+id/invoke_m2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoke M2 (Multimodal Model)" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:paddingTop="16dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+</LinearLayout>

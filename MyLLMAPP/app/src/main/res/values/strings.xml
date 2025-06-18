@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My LLM APP</string>
+    <string name="permissions_and_notifications_title" >Permissions &amp; Notifications</string>
+</resources>

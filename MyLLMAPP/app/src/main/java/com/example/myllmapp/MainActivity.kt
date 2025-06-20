@@ -1,10 +1,12 @@
+//package com.example.myllmapp
+
 package com.example.myllmapp
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.*
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -23,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main) // Uses updated template layout
 
         signInButton = findViewById(R.id.sign_in_button)
         inputText = findViewById(R.id.input_text)
@@ -63,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(signInIntent, 1001)
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: android.content.Intent?) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1001) {
             val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
@@ -81,12 +83,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun runM1Model(input: String): String {
-        // Placeholder for Instruction-following LLM (M1) integration
         return "[M1] Processed input: $input\n(Integrate M1 model here)"
     }
 
     private fun runM2Model(input: String): String {
-        // Placeholder for Multimodal LLM (M2) integration
         return "[M2] Processed input: $input\n(Integrate M2 model here)"
     }
 

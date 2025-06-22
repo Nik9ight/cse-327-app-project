@@ -105,4 +105,6 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, denied.toTypedArray(), 101)
         }
     }
+
+    //test code
 }

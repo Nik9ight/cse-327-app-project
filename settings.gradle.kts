@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "My LLM APP"
 include(":app")
+include(":llama")

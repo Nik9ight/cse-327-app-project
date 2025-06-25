@@ -50,8 +50,16 @@
             android:layout_width="366dp"
             android:layout_height="81dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#FF00A8"
-            android:hint="Ask something..." />
+            android:backgroundTint="#DD00A8"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:hint="Ask something..."
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="16dp" />
+
+
 
         <Button
             android:id="@+id/invoke_m1_button"
@@ -61,6 +69,7 @@
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
 
         <Button
             android:id="@+id/invoke_m2_button"

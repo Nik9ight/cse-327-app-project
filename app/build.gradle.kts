@@ -84,7 +84,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myllmapp"
-        minSdk = 24
+        minSdk = 33
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -114,4 +114,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
+    implementation("de.kherud:llama:4.2.0")
+    implementation(project(":llama"))
+
 }

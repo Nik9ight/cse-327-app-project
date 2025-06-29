@@ -62,6 +62,7 @@ playServicesAuth = "21.2.0"  # <-- ADDED: This is for GoogleSignInClient
 junit = "4.13.2"
 androidxJunit = "1.1.5"      # <-- RENAMED: from junitVersion for better clarity
 espressoCore = "3.5.1"
+activity = "1.10.1"
 
 # Optional Libraries (uncomment and set versions if you use them)
 # imagePicker = "2.1"        # Example ImagePicker library version
@@ -94,6 +95,7 @@ googleid = { module = "com.google.android.libraries.identity.googleid:googleid",
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" } # <-- RENAMED
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 # Optional Libraries (uncomment if you use them)
 # image-picker = { group = "com.github.dhaval2404", name = "ImagePicker", version.ref = "imagePicker" }

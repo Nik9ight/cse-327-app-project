@@ -1,0 +1,115 @@
+ninja: Entering directory `C:\Users\USER\Documents\GitHub\cse-327-app-project\llama\.cxx\Release\623jb5l3\x86_64'
+[1/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[2/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[3/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[4/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[5/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[6/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[7/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[8/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[9/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[10/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[11/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[12/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[13/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[14/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[15/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[16/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[17/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-cparams.cpp.o
+[18/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[19/70] Building C object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[20/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[21/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[22/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[23/70] Building CXX object CMakeFiles/llama-android.dir/llama-android.cpp.o
+C:/Users/USER/Documents/GitHub/cse-327-app-project/llama/src/main/cpp/llama-android.cpp:128:31: warning: 'llama_new_context_with_model' is deprecated: use llama_init_from_model instead [-Wdeprecated-declarations]
+  128 |     llama_context * context = llama_new_context_with_model(model, ctx_params);
+      |                               ^
+C:/Users/USER/Documents/GitHub/llama.cpp/src/../include/llama.h:472:5: note: 'llama_new_context_with_model' has been explicitly marked deprecated here
+  472 |     DEPRECATED(LLAMA_API struct llama_context * llama_new_context_with_model(
+      |     ^
+C:/Users/USER/Documents/GitHub/llama.cpp/src/../include/llama.h:29:56: note: expanded from macro 'DEPRECATED'
+   29 | #    define DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                        ^
+C:/Users/USER/Documents/GitHub/cse-327-app-project/llama/src/main/cpp/llama-android.cpp:366:65: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+  366 |     LOGi("n_len = %d, n_ctx = %d, n_kv_req = %d", n_len, n_ctx, n_kv_req);
+      |                                              ~~                 ^~~~~~~~
+      |                                              %zu
+C:/Users/USER/Documents/GitHub/cse-327-app-project/llama/src/main/cpp/llama-android.cpp:29:62: note: expanded from macro 'LOGi'
+   29 | #define LOGi(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
+      |                                                              ^~~~~~~~~~~
+2 warnings generated.
+[24/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[25/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-io.cpp.o
+[26/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[27/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama.cpp.o
+[28/70] Linking CXX shared library bin\libggml-base.so
+[29/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[30/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[31/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[32/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[33/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[34/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[35/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-context.cpp.o
+[36/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[37/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-model-saver.cpp.o
+[38/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[39/70] Building CXX object build-llama/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[40/70] Linking CXX shared library bin\libggml-cpu.so
+[41/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-kv-cache-unified.cpp.o
+[42/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.o
+[43/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.o
+[44/70] Building CXX object build-llama/common/CMakeFiles/build_info.dir/build-info.cpp.o
+[45/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-kv-cache-unified-iswa.cpp.o
+[46/70] Linking CXX shared library bin\libggml.so
+[47/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[48/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[49/70] Building CXX object build-llama/common/CMakeFiles/common.dir/speculative.cpp.o
+[50/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[51/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[52/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[53/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-sampling.cpp.o
+[54/70] Building CXX object build-llama/common/CMakeFiles/common.dir/llguidance.cpp.o
+[55/70] Building CXX object build-llama/common/CMakeFiles/common.dir/sampling.cpp.o
+[56/70] Building CXX object build-llama/common/CMakeFiles/common.dir/log.cpp.o
+[57/70] Building CXX object build-llama/common/CMakeFiles/common.dir/console.cpp.o
+[58/70] Building CXX object build-llama/common/CMakeFiles/common.dir/chat-parser.cpp.o
+[59/70] Building CXX object build-llama/common/CMakeFiles/common.dir/ngram-cache.cpp.o
+[60/70] Building CXX object build-llama/common/CMakeFiles/common.dir/common.cpp.o
+In file included from C:/Users/USER/Documents/GitHub/llama.cpp/common/common.cpp:8:
+In file included from C:/Users/USER/Documents/GitHub/llama.cpp/common/common.h:7:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/set:1494:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/functional:526:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__functional/boyer_moore_searcher.h:27:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/vector:325:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/formatter_bool.h:20:
+In file included from C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__format/formatter_integral.h:35:
+C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/locale:3257:1: warning: 'wstring_convert<std::codecvt_utf8<char32_t>, char32_t>' is deprecated [-Wdeprecated-declarations]
+ 3257 | wstring_convert<_Codecvt, _Elem, _WideAlloc, _ByteAlloc>::to_bytes(const _Elem* __frm, const _Elem* __frm_end) {
+      | ^
+C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/locale:3161:12: note: in instantiation of member function 'std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t>::to_bytes' requested here
+ 3161 |     return to_bytes(__wstr.data(), __wstr.data() + __wstr.size());
+      |            ^
+C:/Users/USER/Documents/GitHub/llama.cpp/common/common.cpp:726:52: note: in instantiation of member function 'std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t>::to_bytes' requested here
+  726 |         std::string filename_reencoded = converter.to_bytes(filename_utf32);
+      |                                                    ^
+C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/locale:3114:28: note: 'wstring_convert<std::codecvt_utf8<char32_t>, char32_t>' has been explicitly marked deprecated here
+ 3114 | class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 wstring_convert {
+      |                            ^
+C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:942:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+  942 | #    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+      |                                         ^
+C:/Users/USER/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1/__config:915:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  915 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+1 warning generated.
+[61/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/unicode.cpp.o
+[62/70] Building CXX object build-llama/common/CMakeFiles/common.dir/regex-partial.cpp.o
+[63/70] Building CXX object build-llama/common/CMakeFiles/common.dir/json-partial.cpp.o
+[64/70] Building CXX object build-llama/src/CMakeFiles/llama.dir/llama-model.cpp.o
+[65/70] Linking CXX shared library bin\libllama.so
+[66/70] Building CXX object build-llama/common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
+[67/70] Building CXX object build-llama/common/CMakeFiles/common.dir/arg.cpp.o
+[68/70] Building CXX object build-llama/common/CMakeFiles/common.dir/chat.cpp.o
+[69/70] Linking CXX static library build-llama\common\libcommon.a
+[70/70] Linking CXX shared library C:\Users\USER\Documents\GitHub\cse-327-app-project\llama\build\intermediates\cxx\Release\623jb5l3\obj\x86_64\libllama-android.so

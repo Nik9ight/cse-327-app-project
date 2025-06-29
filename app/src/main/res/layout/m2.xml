@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Spinner for selecting mode -->
+    <Spinner
+        android:id="@+id/optionSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/option_choices" />
+
+    <!-- Image preview -->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Select image button -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
+
+    <!-- EditText for custom text (used only in similarity mode) -->
+    <EditText
+        android:id="@+id/customTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter custom text to compare"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <!-- Run model button -->
+    <Button
+        android:id="@+id/runModelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Model"
+        android:layout_marginTop="16dp" />
+
+    <!-- Result text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

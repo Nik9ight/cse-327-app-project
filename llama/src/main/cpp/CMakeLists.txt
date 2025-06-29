@@ -32,7 +32,11 @@ project("llama-android")
 #
 
 #load local llama.cpp
+<<<<<<< Updated upstream
 add_subdirectory(C:/Users/DELL/OneDrive/Documents/GitHub/llama.cpp build-llama)
+=======
+add_subdirectory(C:/Users/USER/Documents/GitHub/llama.cpp build-llama)
+>>>>>>> Stashed changes
 
 # In order to load a library into your app from Java/Kotlin, you must call
 # System.loadLibrary() and pass the name of the library defined here;

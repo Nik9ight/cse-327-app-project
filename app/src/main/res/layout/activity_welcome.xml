@@ -67,7 +67,7 @@
 
             <Button
                 android:id="@+id/login_button"
-                android:text="Login"
+                android:text="USE APP"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#DDDDDD"
@@ -77,7 +77,7 @@
 
             <Button
                 android:id="@+id/register_button"
-                android:text="Register"
+                android:text="PERMISSIONS"
                 android:layout_weight="1"
                 android:backgroundTint="#FF00A8"
                 android:textColor="#FFF"

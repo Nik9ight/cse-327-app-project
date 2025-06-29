@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">My LLM APP</string>
-    <string name="permissions_and_notifications_title" >Permissions &amp; Notifications</string>
+    <string name="permissions_and_notifications_title">Permissions &amp; Notifications</string>
+
+    <string-array name="option_choices">
+        <item>Check image label</item>
+        <item>Test similarity with custom text</item>
+    </string-array>
+
 </resources>

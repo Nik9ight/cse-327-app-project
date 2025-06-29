@@ -84,7 +84,16 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myllmapp"
+<<<<<<< Updated upstream
         minSdk = 33
+=======
+<<<<<<< Updated upstream
+        minSdk = 24
+=======
+        //n
+        minSdk = 24 //n
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -105,6 +114,11 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+    androidResources {
+        noCompress += "onnx"
+    }
+
     buildFeatures {
         viewBinding=true
     }
@@ -114,9 +128,26 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
     implementation("de.kherud:llama:4.2.0")
     implementation(project(":llama"))
+<<<<<<< Updated upstream
 
+=======
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    implementation(files("libs/onnxruntime-android-1.22.0.aar"))
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }

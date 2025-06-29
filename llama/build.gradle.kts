@@ -8,7 +8,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
+<<<<<<< Updated upstream
         minSdk = 33
+=======
+        minSdk = 24
+>>>>>>> Stashed changes
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

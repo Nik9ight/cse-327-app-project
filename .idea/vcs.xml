@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$USER_HOME$/Documents" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../llama.cpp" vcs="Git" />
+<<<<<<< Updated upstream
+=======
+    <mapping directory="$PROJECT_DIR$/../llama.cpp/ggml/src/ggml-kompute/kompute" vcs="Git" />
+>>>>>>> Stashed changes
   </component>
 </project>

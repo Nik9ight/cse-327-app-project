@@ -73,7 +73,7 @@
 
         <Button
             android:id="@+id/invoke_m2_button"
-            android:text="Invoke M2 (Multimodal Model)"
+            android:text="GO TO M2 (Multimodal Model)"
             android:backgroundTint="#9900A8"
             android:textColor="@android:color/white"
             android:layout_marginBottom="24dp"
